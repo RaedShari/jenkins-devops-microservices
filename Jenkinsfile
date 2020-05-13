@@ -5,7 +5,7 @@ pipeline{
 			steps {
 				// sh "mvn --version"
 				echo "Build"
-				ech "Path - $PATH"
+				echo "Path - $PATH"
 				echo "Build Id - $env.BUILD_ID"
 			}
 		}
