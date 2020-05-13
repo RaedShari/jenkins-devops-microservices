@@ -40,7 +40,7 @@ pipeline{
 			steps {
 				//sh "docker build -t raedwaili/currency-exchange-devops:$env.BUILD_TAG"
 				script {
-					dockerImage = docker.build("raedwaili/currency-exchange-devops:{$env.BUILD_TAG}")
+					dockerImage = docker.build("raedwaili/currency-exchange-devops:${env.BUILD_TAG}")
 				}
 			}
 		}
